@@ -1,9 +1,13 @@
 package com.grupom.carwash_proyecto;
 
+import androidx.appcompat.app.AppCompatActivity;
 import android.app.Activity;
 import android.app.ProgressDialog;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.util.Patterns;
+import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -19,7 +23,7 @@ import org.json.JSONObject;
 import java.util.Properties;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-/*
+
 import javax.mail.Authenticator;
 import javax.mail.Message;
 import javax.mail.MessagingException;
@@ -29,11 +33,11 @@ import javax.mail.Transport;
 import javax.mail.internet.AddressException;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
-*/
+
 import cz.msebera.android.httpclient.Header;
 
 public class recuperar extends Activity {
-/*
+
     Session session = null; //Inicio de session para autenticar usuario y password
     ProgressDialog pdialog = null; //dialogo del proceso
     EditText destinatario; //Ingreso del correo a enviar
@@ -42,7 +46,7 @@ public class recuperar extends Activity {
     String para, asunto, mensaje;//Para datos del mensaje
     String usuario=null, password=null, nombrecompleto=null;
     //Variable que contiene la URL
-    private static final String URL_CONTRASENIA = "http://transportweb2.online/API/recuperar_clave.php";
+    private static final String URL_CONTRASENIA = "https://educationsofthn.tech/API/recuperar_clave.php";
 
 
     @Override
@@ -176,7 +180,7 @@ public class recuperar extends Activity {
 
 
     }
-    class enviar_correo extends AsyncTask<String, Void, String> {
+    class enviar_correo extends AsyncTask<String, Void, String>{
 
 
         @Override
@@ -212,5 +216,4 @@ public class recuperar extends Activity {
             Toast.makeText(getApplicationContext(),"Mensaje enviado", Toast.LENGTH_LONG).show();
         }
     }
-*/
 }
